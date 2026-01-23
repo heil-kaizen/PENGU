@@ -97,7 +97,7 @@ export const AdoptionCenter = () => {
                                     {/* !!!!!!!!!!!!!!!!!!!!!!!! PUT TWITTER LINK HERE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */}
                                     {/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */}
                                     <a 
-                                        href="#" 
+                                        href="https://x.com/home" 
                                         target="_blank" 
                                         rel="noopener noreferrer"
                                         className="flex items-center justify-center gap-2 bg-white border border-slate-200 text-slate-600 text-xs font-bold py-2.5 px-3 rounded-xl hover:bg-slate-50 hover:text-sky-600 hover:border-sky-200 transition-all"
