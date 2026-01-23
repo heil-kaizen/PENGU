@@ -53,8 +53,17 @@ export const AdoptionCenter = () => {
                                     alt={`Penguin ${penguin.id}`} 
                                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                                 />
-                                <div className="absolute top-3 right-3 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold text-slate-700 shadow-sm border border-white/50">
-                                    {penguin.age}
+                                
+                                {/* Tags Container */}
+                                <div className="absolute top-3 right-3 flex flex-col gap-2 items-end">
+                                    <div className="bg-white/90 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold text-slate-700 shadow-sm border border-white/50">
+                                        {penguin.age}
+                                    </div>
+                                    {penguin.adopted && (
+                                        <div className="bg-green-500/90 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold text-white shadow-sm border border-green-400 animate-fade-in">
+                                            Adopted
+                                        </div>
+                                    )}
                                 </div>
                             </div>
 
