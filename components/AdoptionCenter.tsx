@@ -101,19 +101,26 @@ export const AdoptionCenter = () => {
                                         Adopt
                                     </a>
 
-                                    {/* Proof Button - External Link to Twitter */}
-                                    {/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */}
-                                    {/* !!!!!!!!!!!!!!!!!!!!!!!! PUT TWITTER LINK HERE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */}
-                                    {/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */}
-                                    <a 
-                                        href="#" 
-                                        target="_blank" 
-                                        rel="noopener noreferrer"
-                                        className="flex items-center justify-center gap-2 bg-white border border-slate-200 text-slate-600 text-xs font-bold py-2.5 px-3 rounded-xl hover:bg-slate-50 hover:text-sky-600 hover:border-sky-200 transition-all"
-                                    >
-                                        Proof
-                                        <ExternalLink size={14} />
-                                    </a>
+                                    {/* Proof Button */}
+                                    {penguin.proof_link ? (
+                                        <a 
+                                            href={penguin.proof_link}
+                                            target="_blank" 
+                                            rel="noopener noreferrer"
+                                            className="flex items-center justify-center gap-2 bg-white border border-slate-200 text-slate-600 text-xs font-bold py-2.5 px-3 rounded-xl hover:bg-slate-50 hover:text-sky-600 hover:border-sky-200 transition-all"
+                                        >
+                                            Proof
+                                            <ExternalLink size={14} />
+                                        </a>
+                                    ) : (
+                                        <button 
+                                            disabled
+                                            className="flex items-center justify-center gap-2 bg-slate-50 border border-slate-100 text-slate-300 text-xs font-bold py-2.5 px-3 rounded-xl cursor-not-allowed"
+                                        >
+                                            Proof
+                                            <ExternalLink size={14} />
+                                        </button>
+                                    )}
                                 </div>
                             </div>
                         </div>
