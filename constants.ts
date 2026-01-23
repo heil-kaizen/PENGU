@@ -91,7 +91,7 @@ export const MOCK_ADOPTIONS: AdoptionRecord[] = [
     date_admitted: "29-October-2025",
     reason_for_admission: "Laceration across the chest",
     area_found: "Bird Island",
-    adopted: false,
+    adopted: true,
     proof_link: "https://x.com/penguinstrtg/status/2014798299438485514?s=20", // PASTE TWITTER LINK HERE
   },
   {
