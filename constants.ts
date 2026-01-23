@@ -1,0 +1,218 @@
+import { PenguinSpecies, AdoptionRecord, VoteOption } from './types';
+
+export const PENGUIN_SPECIES: PenguinSpecies[] = [
+  {
+    id: 'emperor',
+    name: 'Emperor Penguin',
+    scientificName: 'Aptenodytes forsteri',
+    description: 'The tallest and heaviest of all living penguin species. They are the only penguins that breed during the Antarctic winter.',
+    height: '100-122 cm',
+    weight: '22-45 kg',
+    habitat: 'Ice Shelves',
+    region: 'Antarctic',
+    population: '595,000',
+    funFact: 'Males incubate the egg on their feet for two months in the freezing cold.',
+    imagePlaceholderColor: 'bg-yellow-100',
+    imageUrl: 'https://raw.githubusercontent.com/heil-kaizen/PENGU/main/Hero%20Assests/emperor%20penguin.webp'
+  },
+  {
+    id: 'adelie',
+    name: 'Adélie Penguin',
+    scientificName: 'Pygoscelis adeliae',
+    description: 'The quintessential Antarctic penguin, known for their tuxedo-like appearance and spirited personality.',
+    height: '46-71 cm',
+    weight: '3.6-6.0 kg',
+    habitat: 'Coastal Ice',
+    region: 'Antarctic',
+    population: '10 million',
+    funFact: 'Adélies can swim up to 45 mph to catch prey.',
+    imagePlaceholderColor: 'bg-slate-800',
+    imageUrl: 'https://raw.githubusercontent.com/heil-kaizen/PENGU/main/Hero%20Assests/adelled%20penguin.webp'
+  },
+  {
+    id: 'gentoo',
+    name: 'Gentoo Penguin',
+    scientificName: 'Pygoscelis papua',
+    description: 'Recognizable by the white strap running across the top of their head. They are the fastest underwater swimmers.',
+    height: '51-90 cm',
+    weight: '4.9-8.5 kg',
+    habitat: 'Ice-free rocky coasts',
+    region: 'Sub-Antarctic',
+    population: '774,000',
+    funFact: 'Gentoos make nests out of pebbles and will fight over the best ones.',
+    imagePlaceholderColor: 'bg-orange-100',
+    imageUrl: 'https://raw.githubusercontent.com/heil-kaizen/PENGU/main/Hero%20Assests/gento%20penguin.webp'
+  },
+  {
+    id: 'chinstrap',
+    name: 'Chinstrap Penguin',
+    scientificName: 'Pygoscelis antarcticus',
+    description: 'Named for the narrow black band under their heads which makes them appear as if they are wearing a helmet.',
+    height: '68-76 cm',
+    weight: '3-5 kg',
+    habitat: 'Rocky Islands',
+    region: 'Sub-Antarctic',
+    population: '8 million',
+    funFact: 'They are considered the most aggressive type of penguin.',
+    imagePlaceholderColor: 'bg-gray-200',
+    imageUrl: 'https://raw.githubusercontent.com/heil-kaizen/PENGU/main/chinstrap%20penguin.png'
+  },
+  {
+    id: 'king',
+    name: 'King Penguin',
+    scientificName: 'Aptenodytes patagonicus',
+    description: 'Similar to Emperors but slimmer and brighter. They live on sub-Antarctic islands rather than sea ice.',
+    height: '70-100 cm',
+    weight: '9-16 kg',
+    habitat: 'Tussock Grass',
+    region: 'Sub-Antarctic',
+    population: '2.2 million',
+    funFact: 'King penguins do not build nests; they carry their single egg on their feet.',
+    imagePlaceholderColor: 'bg-yellow-200',
+    imageUrl: 'https://raw.githubusercontent.com/heil-kaizen/PENGU/main/Hero%20Assests/king%20penguin.webp'
+  }
+];
+
+export const MOCK_ADOPTIONS: AdoptionRecord[] = [
+  {
+    img_link: "https://raw.githubusercontent.com/heil-kaizen/PENGU/main/AP177.jpg",
+    id: "AP177",
+    age: "Adult",
+    date_admitted: "06-October-2025",
+    reason_for_admission: "Abdomen Injury",
+    area_found: "Bird Island"
+  },
+  {
+    img_link: "https://raw.githubusercontent.com/heil-kaizen/PENGU/main/AP183.jpg",
+    id: "AP183",
+    age: "Adult",
+    date_admitted: "29-October-2025",
+    reason_for_admission: "Laceration across the chest",
+    area_found: "Bird Island"
+  },
+  {
+    img_link: "https://raw.githubusercontent.com/heil-kaizen/PENGU/main/AP186.jpg",
+    id: "AP186",
+    age: "Adult",
+    date_admitted: "03-November-2025",
+    reason_for_admission: "Dragging Left Foot - Injury",
+    area_found: "Bird Island"
+  },
+  {
+    img_link: "https://raw.githubusercontent.com/heil-kaizen/PENGU/main/AP187.jpg",
+    id: "AP187",
+    age: "Adult",
+    date_admitted: "03-November-2025",
+    reason_for_admission: "Multiple Injuries",
+    area_found: "Bird Island"
+  },
+  {
+    img_link: "https://raw.githubusercontent.com/heil-kaizen/PENGU/main/AP191.jpg",
+    id: "AP191",
+    age: "Adult",
+    date_admitted: "12-November-2025",
+    reason_for_admission: "Right Foot - Wounds",
+    area_found: "Bird Island"
+  },
+  {
+    img_link: "https://raw.githubusercontent.com/heil-kaizen/PENGU/main/AP195.jpg",
+    id: "AP195",
+    age: "Chick",
+    date_admitted: "21-November-2025",
+    reason_for_admission: "Emaciated",
+    area_found: "Bird Island"
+  },
+  {
+    img_link: "https://raw.githubusercontent.com/heil-kaizen/PENGU/main/AP270.jpg",
+    id: "AP270",
+    age: "Fledgling",
+    date_admitted: "02-April-2025",
+    reason_for_admission: "Foot Injury",
+    area_found: "Bird Island, Lambert's Bay"
+  },
+  {
+    img_link: "https://github.com/heil-kaizen/PENGU/blob/main/AP406.jpg?raw=true",
+    id: "AP406",
+    age: "Adult",
+    date_admitted: "02-July-2025",
+    reason_for_admission: "Predation, Head and neck wounds",
+    area_found: "Simon’s Town"
+  },
+  {
+    img_link: "https://github.com/heil-kaizen/PENGU/blob/main/AP531.jpg?raw=true",
+    id: "AP531",
+    age: "Fledgling",
+    date_admitted: "20-October-2025",
+    reason_for_admission: "Abandoned due to moulting parents",
+    area_found: "Betty’s Bay"
+  },
+  {
+    img_link: "https://raw.githubusercontent.com/heil-kaizen/PENGU/main/AP533.jpg",
+    id: "AP533",
+    age: "Fledgling",
+    date_admitted: "20-October-2025",
+    reason_for_admission: "Abandoned due to moulting parents",
+    area_found: "Betty’s Bay"
+  },
+  {
+    img_link: "https://github.com/heil-kaizen/PENGU/blob/main/AP589.jpg?raw=true",
+    id: "AP589",
+    age: "Fledgling",
+    date_admitted: "03-November-2025",
+    reason_for_admission: "Unsafe area",
+    area_found: "Sea Point"
+  },
+  {
+    img_link: "https://raw.githubusercontent.com/heil-kaizen/PENGU/main/AP604.jpg",
+    id: "AP604",
+    age: "Fledgling",
+    date_admitted: "11-November-2025",
+    reason_for_admission: "Abandoned due to moulting parents",
+    area_found: "Simon’s Town"
+  },
+  {
+    img_link: "https://raw.githubusercontent.com/heil-kaizen/PENGU/main/AP640.jpg",
+    id: "AP640",
+    age: "Fledgling",
+    date_admitted: "20-November-2025",
+    reason_for_admission: "Abandoned due to moulting parents",
+    area_found: "Simon’s Town"
+  },
+  {
+    img_link: "https://raw.githubusercontent.com/heil-kaizen/PENGU/main/AP645.jpg",
+    id: "AP645",
+    age: "Fledgling",
+    date_admitted: "23-November-2025",
+    reason_for_admission: "Abandoned due to moulting parents",
+    area_found: "Simon’s Town"
+  },
+  {
+    img_link: "https://raw.githubusercontent.com/heil-kaizen/PENGU/main/AP655.jpg",
+    id: "AP655",
+    age: "Fledgling",
+    date_admitted: "24-November-2025",
+    reason_for_admission: "Abandoned due to moulting parents",
+    area_found: "Simon’s Town"
+  },
+  {
+    img_link: "https://github.com/heil-kaizen/PENGU/blob/main/AP657.jpg?raw=true",
+    id: "AP657",
+    age: "Fledgling",
+    date_admitted: "25-November-2025",
+    reason_for_admission: "Abandoned due to moulting parents",
+    area_found: "Simon’s Town"
+  }
+];
+
+export const INITIAL_VOTE_OPTIONS: VoteOption[] = [
+  { id: 'v1', name: 'Aurora', votes: 120 },
+  { id: 'v2', name: 'Echo', votes: 85 },
+  { id: 'v3', name: 'Pingu', votes: 200 },
+  { id: 'v4', name: 'Glacier', votes: 150 },
+  { id: 'v5', name: 'Frost', votes: 95 },
+  { id: 'v6', name: 'Waddle', votes: 110 },
+  { id: 'v7', name: 'Snowy', votes: 75 },
+  { id: 'v8', name: 'Ice cube', votes: 45 },
+  { id: 'v9', name: 'Flipper', votes: 180 },
+  { id: 'v10', name: 'Nova', votes: 130 },
+];
