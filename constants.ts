@@ -75,7 +75,7 @@ export const PENGUIN_SPECIES: PenguinSpecies[] = [
 
 export const MOCK_ADOPTIONS: AdoptionRecord[] = [
   {
-    img_link: "https://raw.githubusercontent.com/heil-kaizen/PENGU/main/AP177.jpg",
+    img_link: "https://raw.githubusercontent.com/heil-kaizen/PENGU/main/Adoption/AP177.jpg",
     id: "AP177",
     age: "Adult",
     date_admitted: "06-October-2025",
@@ -83,7 +83,7 @@ export const MOCK_ADOPTIONS: AdoptionRecord[] = [
     area_found: "Bird Island"
   },
   {
-    img_link: "https://raw.githubusercontent.com/heil-kaizen/PENGU/main/AP183.jpg",
+    img_link: "https://raw.githubusercontent.com/heil-kaizen/PENGU/main/Adoption/AP183.jpg",
     id: "AP183",
     age: "Adult",
     date_admitted: "29-October-2025",
@@ -91,7 +91,7 @@ export const MOCK_ADOPTIONS: AdoptionRecord[] = [
     area_found: "Bird Island"
   },
   {
-    img_link: "https://raw.githubusercontent.com/heil-kaizen/PENGU/main/AP186.jpg",
+    img_link: "https://raw.githubusercontent.com/heil-kaizen/PENGU/main/Adoption/AP186.jpg",
     id: "AP186",
     age: "Adult",
     date_admitted: "03-November-2025",
@@ -99,7 +99,7 @@ export const MOCK_ADOPTIONS: AdoptionRecord[] = [
     area_found: "Bird Island"
   },
   {
-    img_link: "https://raw.githubusercontent.com/heil-kaizen/PENGU/main/AP187.jpg",
+    img_link: "https://raw.githubusercontent.com/heil-kaizen/PENGU/main/Adoption/AP187.jpg",
     id: "AP187",
     age: "Adult",
     date_admitted: "03-November-2025",
