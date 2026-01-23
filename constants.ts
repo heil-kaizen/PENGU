@@ -76,12 +76,12 @@ export const PENGUIN_SPECIES: PenguinSpecies[] = [
 export const MOCK_ADOPTIONS: AdoptionRecord[] = [
   {
     img_link: "https://raw.githubusercontent.com/heil-kaizen/PENGU/main/Adoption/AP177.jpg",
-    id: "AP177",
+    id: "PENG",
     age: "Adult",
     date_admitted: "06-October-2025",
     reason_for_admission: "Abdomen Injury",
     area_found: "Bird Island",
-    adopted: false,
+    adopted: true,
   },
   {
     img_link: "https://raw.githubusercontent.com/heil-kaizen/PENGU/main/Adoption/AP183.jpg",
@@ -94,12 +94,12 @@ export const MOCK_ADOPTIONS: AdoptionRecord[] = [
   },
   {
     img_link: "https://raw.githubusercontent.com/heil-kaizen/PENGU/main/Adoption/AP186.jpg",
-    id: "AP186",
+    id: "PING",
     age: "Adult",
     date_admitted: "03-November-2025",
     reason_for_admission: "Dragging Left Foot - Injury",
     area_found: "Bird Island",
-    adopted: false,
+    adopted: true,
   },
   {
     img_link: "https://raw.githubusercontent.com/heil-kaizen/PENGU/main/Adoption/AP187.jpg",
