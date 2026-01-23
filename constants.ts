@@ -80,7 +80,8 @@ export const MOCK_ADOPTIONS: AdoptionRecord[] = [
     age: "Adult",
     date_admitted: "06-October-2025",
     reason_for_admission: "Abdomen Injury",
-    area_found: "Bird Island"
+    area_found: "Bird Island",
+    adopted: false,
   },
   {
     img_link: "https://raw.githubusercontent.com/heil-kaizen/PENGU/main/Adoption/AP183.jpg",
@@ -88,7 +89,8 @@ export const MOCK_ADOPTIONS: AdoptionRecord[] = [
     age: "Adult",
     date_admitted: "29-October-2025",
     reason_for_admission: "Laceration across the chest",
-    area_found: "Bird Island"
+    area_found: "Bird Island",
+    adopted: false,
   },
   {
     img_link: "https://raw.githubusercontent.com/heil-kaizen/PENGU/main/Adoption/AP186.jpg",
@@ -96,7 +98,8 @@ export const MOCK_ADOPTIONS: AdoptionRecord[] = [
     age: "Adult",
     date_admitted: "03-November-2025",
     reason_for_admission: "Dragging Left Foot - Injury",
-    area_found: "Bird Island"
+    area_found: "Bird Island",
+    adopted: false,
   },
   {
     img_link: "https://raw.githubusercontent.com/heil-kaizen/PENGU/main/Adoption/AP187.jpg",
@@ -104,7 +107,8 @@ export const MOCK_ADOPTIONS: AdoptionRecord[] = [
     age: "Adult",
     date_admitted: "03-November-2025",
     reason_for_admission: "Multiple Injuries",
-    area_found: "Bird Island"
+    area_found: "Bird Island",
+    adopted: false,
   },
   {
     img_link: "https://raw.githubusercontent.com/heil-kaizen/PENGU/main/AP191.jpg",
@@ -112,7 +116,8 @@ export const MOCK_ADOPTIONS: AdoptionRecord[] = [
     age: "Adult",
     date_admitted: "12-November-2025",
     reason_for_admission: "Right Foot - Wounds",
-    area_found: "Bird Island"
+    area_found: "Bird Island",
+    adopted: false,
   },
   {
     img_link: "https://raw.githubusercontent.com/heil-kaizen/PENGU/main/AP195.jpg",
@@ -120,7 +125,8 @@ export const MOCK_ADOPTIONS: AdoptionRecord[] = [
     age: "Chick",
     date_admitted: "21-November-2025",
     reason_for_admission: "Emaciated",
-    area_found: "Bird Island"
+    area_found: "Bird Island",
+    adopted: false,
   },
   {
     img_link: "https://raw.githubusercontent.com/heil-kaizen/PENGU/main/AP270.jpg",
@@ -128,7 +134,8 @@ export const MOCK_ADOPTIONS: AdoptionRecord[] = [
     age: "Fledgling",
     date_admitted: "02-April-2025",
     reason_for_admission: "Foot Injury",
-    area_found: "Bird Island, Lambert's Bay"
+    area_found: "Bird Island, Lambert's Bay",
+    adopted: false,
   },
   {
     img_link: "https://github.com/heil-kaizen/PENGU/blob/main/AP406.jpg?raw=true",
@@ -136,7 +143,8 @@ export const MOCK_ADOPTIONS: AdoptionRecord[] = [
     age: "Adult",
     date_admitted: "02-July-2025",
     reason_for_admission: "Predation, Head and neck wounds",
-    area_found: "Simon’s Town"
+    area_found: "Simon’s Town",
+    adopted: false,
   },
   {
     img_link: "https://github.com/heil-kaizen/PENGU/blob/main/AP531.jpg?raw=true",
@@ -144,7 +152,8 @@ export const MOCK_ADOPTIONS: AdoptionRecord[] = [
     age: "Fledgling",
     date_admitted: "20-October-2025",
     reason_for_admission: "Abandoned due to moulting parents",
-    area_found: "Betty’s Bay"
+    area_found: "Betty’s Bay",
+    adopted: false,
   },
   {
     img_link: "https://raw.githubusercontent.com/heil-kaizen/PENGU/main/AP533.jpg",
@@ -152,7 +161,8 @@ export const MOCK_ADOPTIONS: AdoptionRecord[] = [
     age: "Fledgling",
     date_admitted: "20-October-2025",
     reason_for_admission: "Abandoned due to moulting parents",
-    area_found: "Betty’s Bay"
+    area_found: "Betty’s Bay",
+    adopted: false,
   },
   {
     img_link: "https://github.com/heil-kaizen/PENGU/blob/main/AP589.jpg?raw=true",
@@ -160,7 +170,8 @@ export const MOCK_ADOPTIONS: AdoptionRecord[] = [
     age: "Fledgling",
     date_admitted: "03-November-2025",
     reason_for_admission: "Unsafe area",
-    area_found: "Sea Point"
+    area_found: "Sea Point",
+    adopted: false,
   },
   {
     img_link: "https://raw.githubusercontent.com/heil-kaizen/PENGU/main/AP604.jpg",
@@ -168,7 +179,8 @@ export const MOCK_ADOPTIONS: AdoptionRecord[] = [
     age: "Fledgling",
     date_admitted: "11-November-2025",
     reason_for_admission: "Abandoned due to moulting parents",
-    area_found: "Simon’s Town"
+    area_found: "Simon’s Town",
+    adopted: false,
   },
   {
     img_link: "https://raw.githubusercontent.com/heil-kaizen/PENGU/main/AP640.jpg",
@@ -176,7 +188,8 @@ export const MOCK_ADOPTIONS: AdoptionRecord[] = [
     age: "Fledgling",
     date_admitted: "20-November-2025",
     reason_for_admission: "Abandoned due to moulting parents",
-    area_found: "Simon’s Town"
+    area_found: "Simon’s Town",
+    adopted: false,
   },
   {
     img_link: "https://raw.githubusercontent.com/heil-kaizen/PENGU/main/AP645.jpg",
@@ -184,7 +197,8 @@ export const MOCK_ADOPTIONS: AdoptionRecord[] = [
     age: "Fledgling",
     date_admitted: "23-November-2025",
     reason_for_admission: "Abandoned due to moulting parents",
-    area_found: "Simon’s Town"
+    area_found: "Simon’s Town",
+    adopted: false,
   },
   {
     img_link: "https://raw.githubusercontent.com/heil-kaizen/PENGU/main/AP655.jpg",
@@ -192,7 +206,8 @@ export const MOCK_ADOPTIONS: AdoptionRecord[] = [
     age: "Fledgling",
     date_admitted: "24-November-2025",
     reason_for_admission: "Abandoned due to moulting parents",
-    area_found: "Simon’s Town"
+    area_found: "Simon’s Town",
+    adopted: false,
   },
   {
     img_link: "https://github.com/heil-kaizen/PENGU/blob/main/AP657.jpg?raw=true",
@@ -200,7 +215,8 @@ export const MOCK_ADOPTIONS: AdoptionRecord[] = [
     age: "Fledgling",
     date_admitted: "25-November-2025",
     reason_for_admission: "Abandoned due to moulting parents",
-    area_found: "Simon’s Town"
+    area_found: "Simon’s Town",
+    adopted: false,
   }
 ];
 
