@@ -1,8 +1,20 @@
-import React from 'react';
+import React, { useState, useRef } from 'react';
 import { Heart, ExternalLink, Calendar, MapPin, Activity } from 'lucide-react';
 import { MOCK_ADOPTIONS } from '../constants';
 
 export const AdoptionCenter = () => {
+    const [previewSrc, setPreviewSrc] = useState<string | null>(null);
+    const previewRef = useRef<HTMLDivElement>(null);
+
+    const handleMouseMove = (e: React.MouseEvent) => {
+        if (previewRef.current) {
+            // Offset the preview slightly from the cursor to avoid blocking view
+            const x = e.clientX + 20;
+            const y = e.clientY + 20;
+            previewRef.current.style.transform = `translate(${x}px, ${y}px)`;
+        }
+    };
+
     return (
         <section id="adoption" className="relative py-24 overflow-hidden bg-slate-50">
             {/* Background with Blur Effect */}
@@ -26,8 +38,16 @@ export const AdoptionCenter = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                     {MOCK_ADOPTIONS.map((penguin) => (
                         <div key={penguin.id} className="bg-white/90 backdrop-blur-sm rounded-3xl overflow-hidden shadow-sm border border-white/50 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full group">
-                            {/* Image Header */}
-                            <div className="relative h-48 w-full overflow-hidden bg-slate-100">
+                            {/* Image Header with Hover Preview Event */}
+                            <div 
+                                className="relative h-48 w-full overflow-hidden bg-slate-100 cursor-zoom-in"
+                                onMouseEnter={(e) => {
+                                    setPreviewSrc(penguin.img_link);
+                                    handleMouseMove(e);
+                                }}
+                                onMouseLeave={() => setPreviewSrc(null)}
+                                onMouseMove={handleMouseMove}
+                            >
                                 <img 
                                     src={penguin.img_link} 
                                     alt={`Penguin ${penguin.id}`} 
@@ -96,6 +116,23 @@ export const AdoptionCenter = () => {
                         * All adoption proceeds go directly to conservation efforts.
                     </p>
                 </div>
+            </div>
+
+            {/* Floating Image Preview */}
+            <div 
+                ref={previewRef}
+                className="fixed top-0 left-0 z-[100] pointer-events-none"
+                style={{ opacity: previewSrc ? 1 : 0 }}
+            >
+                {previewSrc && (
+                    <div className="bg-white/90 backdrop-blur-xl p-2 rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.2)] border border-white/50 animate-fade-in">
+                        <img 
+                            src={previewSrc} 
+                            alt="Preview" 
+                            className="w-auto h-auto max-w-[400px] max-h-[600px] rounded-xl shadow-sm"
+                        />
+                    </div>
+                )}
             </div>
         </section>
     );
