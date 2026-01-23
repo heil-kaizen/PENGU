@@ -76,13 +76,13 @@ export const PENGUIN_SPECIES: PenguinSpecies[] = [
 export const MOCK_ADOPTIONS: AdoptionRecord[] = [
   {
     img_link: "https://raw.githubusercontent.com/heil-kaizen/PENGU/main/Adoption/AP177.jpg",
-    id: "AP177",
+    id: "PENG",
     age: "Adult",
     date_admitted: "06-October-2025",
     reason_for_admission: "Abdomen Injury",
     area_found: "Bird Island",
     adopted: false,
-    proof_link: "", // PASTE TWITTER LINK HERE
+    proof_link: "https://x.com/penguinstrtg/status/2014786376907039157?s=20", // PASTE TWITTER LINK HERE
   },
   {
     img_link: "https://raw.githubusercontent.com/heil-kaizen/PENGU/main/Adoption/AP183.jpg",
@@ -96,13 +96,13 @@ export const MOCK_ADOPTIONS: AdoptionRecord[] = [
   },
   {
     img_link: "https://raw.githubusercontent.com/heil-kaizen/PENGU/main/Adoption/AP186.jpg",
-    id: "AP186",
+    id: "Penny",
     age: "Adult",
     date_admitted: "03-November-2025",
     reason_for_admission: "Dragging Left Foot - Injury",
     area_found: "Bird Island",
     adopted: false,
-    proof_link: "", // PASTE TWITTER LINK HERE
+    proof_link: "https://x.com/penguinstrtg/status/2014787140379439593?s=20", // PASTE TWITTER LINK HERE
   },
   {
     img_link: "https://raw.githubusercontent.com/heil-kaizen/PENGU/main/Adoption/AP187.jpg",
