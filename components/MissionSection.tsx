@@ -17,8 +17,8 @@ export const MissionSection = () => {
             <div className="relative z-10 max-w-5xl mx-auto px-6">
                 <div className="text-center mb-16">
                     <h2 className="text-3xl md:text-5xl font-bold text-slate-800 mb-6 tracking-tight drop-shadow-sm">Our Mission</h2>
-                    <p className="text-xl text-slate-700 font-medium leading-relaxed max-w-2xl mx-auto drop-shadow-sm">
-                        Our mission is to help protect penguins by making knowledge and conservation accessible to everyone.
+                    <p className="text-lg md:text-xl text-slate-700 font-medium leading-relaxed max-w-4xl mx-auto drop-shadow-sm">
+                        Our mission is to help protect the conservation of penguins by acquiring a portfolio of penguins currently in rehabilitation to be released back into the wild. All revenue from penguin acquisitions is donated to the SANCCOB seabirds facility in Capetown, South Africa to cover the cost of fish, medication, water and other essentials needed for rehabilitation. Creator fees will be used to invest in the rehabilitation of as many penguins as possible.
                     </p>
                 </div>
 
