@@ -20,6 +20,7 @@ export interface AdoptionRecord {
   date_admitted: string;
   reason_for_admission: string;
   area_found: string;
+  adopted?: boolean;
 }
 
 export interface VoteOption {
