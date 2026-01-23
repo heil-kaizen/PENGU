@@ -86,13 +86,13 @@ export const MOCK_ADOPTIONS: AdoptionRecord[] = [
   },
   {
     img_link: "https://raw.githubusercontent.com/heil-kaizen/PENGU/main/Adoption/AP183.jpg",
-    id: "AP183",
+    id: "PIP",
     age: "Adult",
     date_admitted: "29-October-2025",
     reason_for_admission: "Laceration across the chest",
     area_found: "Bird Island",
     adopted: false,
-    proof_link: "", // PASTE TWITTER LINK HERE
+    proof_link: "https://x.com/penguinstrtg/status/2014798299438485514?s=20", // PASTE TWITTER LINK HERE
   },
   {
     img_link: "https://raw.githubusercontent.com/heil-kaizen/PENGU/main/Adoption/AP186.jpg",
