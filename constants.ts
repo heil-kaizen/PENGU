@@ -94,7 +94,7 @@ export const MOCK_ADOPTIONS: AdoptionRecord[] = [
   },
   {
     img_link: "https://raw.githubusercontent.com/heil-kaizen/PENGU/main/Adoption/AP186.jpg",
-    id: "PING",
+    id: "Penny",
     age: "Adult",
     date_admitted: "03-November-2025",
     reason_for_admission: "Dragging Left Foot - Injury",
