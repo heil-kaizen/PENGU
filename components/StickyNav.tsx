@@ -7,7 +7,7 @@ export const StickyNav = () => {
     // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     // !!!!!!!!!!!!!!!!!!!!!!!! PUT COIN ADDRESS (CA) HERE !!!!!!!!!!!!!!!!!!!!!!!!!!!!
     // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    const CA = "COMING SOON"; 
+    const CA = "COMING  SOON"; 
 
     const handleCopy = () => {
         navigator.clipboard.writeText(CA);
