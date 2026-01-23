@@ -102,7 +102,7 @@ export const StickyNav = () => {
                 {/* !!!!!!!!!!!!!!!!!!!!!!!! PUT TWITTER LINK HERE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */}
                 {/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */}
                 <a 
-                    href="#" 
+                    href="https://x.com/penguinstrtg" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="bg-white/90 backdrop-blur-md p-2.5 rounded-full shadow-sm border border-slate-200 text-slate-800 hover:text-black hover:scale-110 transition-all duration-300 group"
