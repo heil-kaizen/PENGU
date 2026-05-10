@@ -21,6 +21,7 @@ export interface AdoptionRecord {
   reason_for_admission: string;
   area_found: string;
   adopted?: boolean;
+  released?: boolean;
   proof_link?: string;
 }
 
