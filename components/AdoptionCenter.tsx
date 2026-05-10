@@ -59,16 +59,21 @@ export const AdoptionCenter = () => {
                                     <div className="bg-white/90 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold text-slate-700 shadow-sm border border-white/50">
                                         {penguin.age}
                                     </div>
-                                    {penguin.adopted && (
+                                    {penguin.adopted && !penguin.released && (
                                         <div className="bg-green-500/90 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold text-white shadow-sm border border-green-400 animate-fade-in">
                                             Adopted
+                                        </div>
+                                    )}
+                                    {penguin.released && (
+                                        <div className="bg-sky-600/90 backdrop-blur-md px-4 py-1.5 rounded-full text-[10px] sm:text-xs font-black uppercase tracking-wider text-white shadow-lg border border-sky-400 animate-fade-in">
+                                            Released into the Wild
                                         </div>
                                     )}
                                 </div>
                             </div>
 
                             {/* Content */}
-                            <div className="p-5 flex flex-col flex-grow">
+                            <div className={`p-5 flex flex-col flex-grow ${penguin.released ? 'opacity-75' : ''}`}>
                                 <div className="flex justify-between items-start mb-2">
                                     <h3 className="text-xl font-bold text-slate-800 tracking-tight">{penguin.id}</h3>
                                 </div>
@@ -91,15 +96,21 @@ export const AdoptionCenter = () => {
                                 {/* Buttons */}
                                 <div className="grid grid-cols-2 gap-3 mt-6 pt-4 border-t border-slate-100">
                                     {/* Adopt Button - External Link */}
-                                    <a 
-                                        href="https://adopt.sanccob.co.za/get-involved/adopt-a-penguin/adopt-and-name-a-penguin/" 
-                                        target="_blank" 
-                                        rel="noopener noreferrer"
-                                        className="flex items-center justify-center gap-2 bg-slate-900 text-white text-xs font-bold py-2.5 px-3 rounded-xl hover:bg-sky-600 transition-colors shadow-md hover:shadow-lg"
-                                    >
-                                        <Heart size={14} className="fill-current" />
-                                        Adopt
-                                    </a>
+                                    {penguin.released ? (
+                                        <div className="flex items-center justify-center gap-2 bg-slate-100 text-slate-400 text-[10px] uppercase font-black py-2.5 px-3 rounded-xl border border-slate-200">
+                                            Successful Release
+                                        </div>
+                                    ) : (
+                                        <a 
+                                            href="https://adopt.sanccob.co.za/get-involved/adopt-a-penguin/adopt-and-name-a-penguin/" 
+                                            target="_blank" 
+                                            rel="noopener noreferrer"
+                                            className="flex items-center justify-center gap-2 bg-slate-900 text-white text-xs font-bold py-2.5 px-3 rounded-xl hover:bg-sky-600 transition-colors shadow-md hover:shadow-lg"
+                                        >
+                                            <Heart size={14} className="fill-current" />
+                                            Adopt
+                                        </a>
+                                    )}
 
                                     {/* Proof Button */}
                                     {penguin.proof_link ? (
