@@ -36,7 +36,17 @@ export const AdoptionCenter = () => {
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-                    {MOCK_ADOPTIONS.map((penguin) => (
+                    {[...MOCK_ADOPTIONS]
+                        .map((item, index) => ({ item, index }))
+                        .sort((a, b) => {
+                            const isNewAdoptedA = a.item.adopted && !a.item.released ? 1 : 0;
+                            const isNewAdoptedB = b.item.adopted && !b.item.released ? 1 : 0;
+                            if (isNewAdoptedA !== isNewAdoptedB) {
+                                return isNewAdoptedB - isNewAdoptedA;
+                            }
+                            return a.index - b.index;
+                        })
+                        .map(({ item: penguin }) => (
                         <div key={penguin.id} className="bg-white/90 backdrop-blur-sm rounded-3xl overflow-hidden shadow-sm border border-white/50 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full group">
                             {/* Image Header with Hover Preview Event */}
                             <div 
