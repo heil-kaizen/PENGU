@@ -202,13 +202,13 @@ export const MOCK_ADOPTIONS: AdoptionRecord[] = [
     adopted: false,
   },
   {
-    id: "AP177",
+    id: "PENG",
     img_link: "https://raw.githubusercontent.com/heil-kaizen/PENGU/main/up%20for%20adoption/AP177.webp",
     age: "Fledgling",
     date_admitted: "2025-10-06",
     reason_for_admission: "Injury to the Abdomen",
     area_found: "Bird Island",
-    adopted: false,
+    adopted: true,
   },
   {
     id: "AP237",
